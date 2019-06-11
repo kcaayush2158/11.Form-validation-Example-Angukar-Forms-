@@ -13,5 +13,13 @@ export class AppComponent {
 
   userModel = new User('','rob@gmail.com',2,' default','morning',true);
 
-
+  validTopic(value){
+    if(value === 'default'){
+      this.topichasError=true;
+      console.log("error is true");
+    }else{
+      this.topichasError=false;
+      console.log("error is false");
+    }
+  }
 }
